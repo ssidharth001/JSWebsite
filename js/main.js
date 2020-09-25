@@ -2,12 +2,18 @@ var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var response = JSON.parse(xhttp.responseText);
-
+      
       //for menu
       var menu = response.menu;
       var output1 = '';
       for(var i = 0;i < menu.length;i++){
-        output1 += '<li>'+'<a href='+ menu[i].url +'>'+menu[i].name+'</a>'+'</li>';
+        if(menu[i].not_found == true){
+          output1 += '<li>'+'<a href="error_404.html">'+menu[i].name+'</a>'+'</li>';
+        }
+        else {
+          output1 += '<li>'+'<a href='+ menu[i].url +'>'+menu[i].name+'</a>'+'</li>';
+        }
+        
       }
       document.getElementById('menu').innerHTML = output1;
 
