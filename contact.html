@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RMedia</title>
     <link rel="stylesheet" href="css\style.css">
+    <script type="text/javascript" src="js\main.js"></script>
     
 </head>
 <body>
@@ -23,11 +24,7 @@
         <!-- Left section Start -->
         <div class="left-sec">
             <nav>
-                <ul>
-                    <li> <a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul id="menu">
                 </ul>
             </nav>
         </div>
@@ -35,17 +32,28 @@
 
         <!-- Middle sec start -->
         <div class="middle-sec">
-            <form action=""></form>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject" maxlength="24"><br>
+                <label for="phonenumber">Phone Number:</label><br>
+                <label>+91-</label>
+                <input type="tel" id="phone" name="phone" placeholder="1234567890" pattern="[0-9]{10}" required><br>
+                <label for="email">Email ID:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" rows="5" cols="60" maxlength="265" required></textarea><br>
+                <input type="submit" value="Submit">
+              </form> 
         </div>
         <!-- Middle section end -->
 
         <!-- Right sec start -->
         <div class="right-sec">
             <h3>Latest Posts</h3>
-            <ul>
-                <li><a href="#" ><img src="images/post-image.jpg" alt="" /></a></li>
-                <li><a href="#" ><img src="images/post-image.jpg" alt="" /></a></li>
-                <li><a href="#" ><img src="images/post-image.jpg" alt="" /></a></li>
+            <ul id="latest-posts">
+                
             </ul>
         </div>
         <!--  Right sec end-->

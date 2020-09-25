@@ -1,36 +1,31 @@
 {
     "menu": [{
-                "name":"Home",
+                "title":"Home",
                 "url":"index.html",
                 "not_found":false
             },
             {
-                "name":"About",
+                "title":"About",
                 "url":"about.html",
                 "not_found":true
             },
             {
-                "name":"Services",
+                "title":"Services",
                 "url":"services.html",
                 "not_found":false
             },
             {
-                "name":"Contact",
-                "url":"contact.html",
-                "not_found":false
-            },
-            {
-                "name":"Contact",
+                "title":"Contact",
                 "url":"contact.html",
                 "not_found":false
             }
+            
     ],
+
     "posts": [
         "images/post-image.jpg",
-        "images/post-image.jpg",
-        "images/post-image.jpg",
-        "images/post-image.jpg",
         "images/post-image.jpg"
+        
     ],
     "more": "lorem lpsum is simply dummy text of the printing and typesetting industry.",
     "tableheader": ["Random","Loren","Loren","Loren"]
