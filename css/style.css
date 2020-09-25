@@ -84,7 +84,11 @@ nav a:hover {
 	background-color: white;
 	text-align: justify;
     width: 64%;
+}
+
+.error-page {
     height: 100vh;
+    text-align: center;
 }
 
 .middle-sec .left-content {
