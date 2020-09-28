@@ -7,8 +7,11 @@
     <title>RMedia</title>
     <link rel="stylesheet" href="css\style.css">
     <script type="text/javascript" src="js\main.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/common.js"></script>
 </head>
 <body>
+    
     <header>
         <div class="container">
             <h1 class="logo"><a href="/"><img src="images/logo.jpg" alt="RMedia"></a></h1>
@@ -23,11 +26,7 @@
         <!-- Left section Start -->
         <div class="left-sec">
             <nav>
-                <ul>
-                    <li> <a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul id="menu">
                 </ul>
             </nav>
         </div>
@@ -36,25 +35,21 @@
         <!-- Middle sec start -->
         <div class="middle-sec">
             <div class="left-content">
-                <h2>Services</h2>
+                <h2 id="page-heading-two"></h2>
                 <p> Lorem lpsum is simply dummy text of the printing and typesetting industry. 
                     Lorem lpsum has been the industry's standard dummy text ever since the 1500's,when an
                     unknown printer took a galley of type and scrambled it to make a type specimen book.It has 
                     survived not only five centuries, but also the leap  into electronic typesetting,remaining
                     1960s with the release ofLetraset sheets containing lorem lpsum passages,and more recently with desktop publishing software
-                    like Aldus Pagemker including versions of lorem lpsum.</p>
-                <p>why do use it?</p>
+                    like Aldus Pagemker including versions of lorem lpsum.</p>                
             </div>
             <div class="right-content">
                 <img src="images/main-image.jpg" alt="Rmedia image" class="content-img">    
             </div>
             <div class="table-data"> 
                 <table cellpadding="2px" cellspacing="2px">
-                    <tr class="table-head">
-                        <th>Lorem</th>
-                        <th>Lorem</th>
-                        <th>Lorem</th>
-                        <th>Lorem</th>
+                    <tr class="table-head" id="table-head">
+                        
                     </tr>
                     <tr>
                         <td>Lorem</td>
@@ -106,10 +101,8 @@
         <!-- Right sec start -->
         <div class="right-sec">
             <h3>Latest Posts</h3>
-            <ul>
-                <li><a href="#" ><img src="images/post-image.jpg" alt="" /></a></li>
-                <li><a href="#" ><img src="images/post-image.jpg" alt="" /></a></li>
-                <li><a href="#" ><img src="images/post-image.jpg" alt="" /></a></li>
+            <ul id="latest-posts">
+                
             </ul>
         </div>
         <!--  Right sec end-->
@@ -131,5 +124,6 @@
             </div>
         </div>
     </footer>
+    
 </body>
 </html>
