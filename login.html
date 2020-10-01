@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RMedia</title>
+    <link rel="stylesheet" href="css\style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">
+          <a href="/"><img src="images/logo.jpg" alt="RMedia" /></a>
+        </h1>
+        <div class="search-wrap">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search..."
+          />
+        </div>
+      </div>
+      <!-- <div class="header-bottom"></div> -->
+    </header>
+    <div class="container">
+      <div class="content">
+        <!-- Left section Start -->
+        <div class="left-sec">
+          <nav>
+            <ul id="menu"></ul>
+          </nav>
+        </div>
+        <!-- Left section end -->
+
+        <!-- Middle sec start -->
+        <div>
+          <h2 class="login-header">Login</h2>
+          <div>
+            <form>
+              <label for="firstname">Name:</label><br />
+              <input type="text" id="first-name" name="firstname" /><br />
+              <label for="password">Password:</label><br />
+              <input type="password" id="password" name="password" /><br />
+              <span id="error-message"></span>
+              <a id="create-account" href="/register.html"
+                >Create a new account?</a
+              >
+              <button id="submit-button" type="button" onclick="login()">
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Middle section end -->
+
+        <!-- Right sec start -->
+
+        <!--  Right sec end-->
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer-item">
+          <p>
+            lorem lpsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="footer-item">
+          <p>
+            lorem lpsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="footer-item">
+          <p>
+            lorem lpsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="footer-item">
+          <p>
+            lorem lpsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="js/login.js"></script>
+</html>

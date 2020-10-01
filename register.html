@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RMedia</title>
+    <link rel="stylesheet" href="css\style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">
+          <a href="/"><img src="images/logo.jpg" alt="RMedia" /></a>
+        </h1>
+        <div class="search-wrap">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search..."
+          />
+        </div>
+      </div>
+      <!-- <div class="header-bottom"></div> -->
+    </header>
+    <div class="container">
+      <div class="content">
+        <!-- Left section Start -->
+        <div class="left-sec">
+          <nav>
+            <ul id="menu"></ul>
+          </nav>
+        </div>
+        <!-- Left section end -->
+
+        <!-- Middle sec start -->
+        <div>
+          <h2 class="register-header">Register</h2>
+          <div>
+            <form>
+              <label for="firstname">First Name:</label><br />
+              <input type="text" id="first-name" name="firstname" /><br />
+              <span class="error-text" id="error-fname"></span>
+              <label for="lastname">Last Name:</label><br />
+              <input type="text" id="last-name" name="lastname" /><br />
+              <span class="error-text" id="error-lname"></span>
+              <label for="dateofbirth">Date of Birth:</label><br />
+              <input type="date" id="date-of-birth" name="dateofbirth" /><br />
+              <span class="error-text" id="error-dob"></span>
+              <div>
+                <label for="gender">Gender:</label><br />
+                <div style="margin: 10px 0px">
+                  <input
+                    type="radio"
+                    id="gender-male"
+                    name="gender"
+                    value="male"
+                  />
+                  Male
+                  <input
+                    type="radio"
+                    id="gender-female"
+                    name="gender"
+                    value="female"
+                  />
+                  Female
+                  <input
+                    type="radio"
+                    id="gender-other"
+                    name="gender"
+                    value="other"
+                  />
+                  Other<br />
+                </div>
+              </div>
+              <span class="error-text" id="error-gender"></span>
+              <label for="password">Password:</label><br />
+              <input type="password" id="password" name="password" /><br />
+              <span class="error-text" id="error-pass"></span>
+              <label for="password">Confirm Password:</label><br />
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirmpassword"
+              /><br />
+              <span class="error-text" id="error-confpass"></span>
+              <div>
+                <input type="checkbox" id="checkbox" name="checkbox" value="" />
+                <label for="checkbox" style="font-size: 14px"
+                  >Agree terms and conditions</label
+                ><br />
+              </div>
+              <span class="error-text" id="error-checkbox"></span>
+              <button id="submit-button" type="button">REGISTER</button>
+            </form>
+          </div>
+        </div>
+        <!-- Middle section end -->
+
+        <!-- Right sec start -->
+
+        <!--  Right sec end-->
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer-item">
+          <p>
+            lorem lpsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="footer-item">
+          <p>
+            lorem lpsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="footer-item">
+          <p>
+            lorem lpsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="footer-item">
+          <p>
+            lorem lpsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <section class="modal hide">
+      <h3 class="modal-heading">Registration Succesfull</h2>
+      <a href="/login.html" class="login-btn">Login</a>
+    </section>
+    <div class="overlay hide"></div>
+  </body>
+  <script type="text/javascript" src="js/register.js"></script>
+</html>
