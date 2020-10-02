@@ -7,7 +7,9 @@
     <title>RMedia</title>
     <link rel="stylesheet" href="css\style.css" />
     <script type="text/javascript" src="js\main.js"></script>
+
     <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
   </head>
   <body>
     <header>
@@ -22,9 +24,12 @@
             id="search"
             placeholder="Search..."
           />
+          <div class="header-bottom">
+            <span id="name-display"></span><span></span
+            ><button id="logout-button">Logout</button>
+          </div>
         </div>
       </div>
-      <!-- <div class="header-bottom"></div> -->
     </header>
     <div class="container">
       <div class="content">
@@ -39,26 +44,12 @@
         <!-- Middle sec start -->
         <div class="middle-sec">
           <div class="left-content">
-            <h2>About</h2>
-            <p>
-              Lorem lpsum is simply dummy text of the printing and typesetting
-              industry. Lorem lpsum has been the industry's standard dummy text
-              ever since the 1500's,when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.It has survived
-              not only five centuries, but also the leap into electronic
-              typesetting,remaining 1960s with the release ofLetraset sheets
-              containing lorem lpsum passages,and more recently with desktop
-              publishing software like Aldus Pagemker including versions of
-              lorem lpsum.
-            </p>
+            <h2 id="page-heading"></h2>
+            <p id="test-text">this is a test text</p>
+            <p id="first-para"></p>
+            <p id="read-more"></p>
           </div>
-          <div class="right-content">
-            <img
-              src="images/main-image.jpg"
-              alt="Rmedia image"
-              class="content-img"
-            />
-          </div>
+          <div class="right-content" id="right-content"></div>
           <div class="table-data">
             <table cellpadding="2px" cellspacing="2px">
               <tr class="table-head" id="table-head"></tr>
@@ -160,4 +151,6 @@
       </div>
     </footer>
   </body>
+  <script type="text/javascript" src="js/logout.js"></script>
+  <script src="js/search.js"></script>
 </html>

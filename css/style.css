@@ -227,7 +227,7 @@ td {
 .modal {
   position: fixed;
   padding: 30px;
-  border: 5px solid aqua;
+  border: 5px solid#66c5e4;
   border-radius: 6px;
   top: 40%;
   left: 50%;
@@ -249,8 +249,11 @@ td {
   text-decoration: none;
   color: #000;
   background-color: #66c5e4;
-  padding: 10px 12px;
+  padding: 3px 10px;
   margin: 10px 0;
+  border-radius: 5px;
+  margin: 220px;
+  font-weight: 600;
 }
 
 .overlay {
@@ -260,6 +263,10 @@ td {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.highlight {
+  background-color: #fdff32;
 }
 
 footer {

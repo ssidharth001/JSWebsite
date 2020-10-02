@@ -1,23 +1,9 @@
-// var objPeople = [
-//   {
-//     user: "sid",
-//     pass: "pass",
-//   },
-//   {
-//     user: "tom",
-//     pass: "pass",
-//   },
-// ];
-
 function login() {
   let name = document.getElementById("first-name").value;
   let password = document.getElementById("password").value;
   var userList = localStorage.getItem("users");
   let allUsers = JSON.parse(userList);
-  //   for (i = 0; i < allUsers.length; i++) {
-  //     console.log(allUsers[i].firstname);
-  //     console.log(allUsers[i].password);
-  //   }
+
   clearErrormsg();
   for (i = 0; i < allUsers.length; i++) {
     if (name == allUsers[i].firstname && password == allUsers[i].password) {
@@ -50,5 +36,3 @@ function clearErrormsg() {
     error.style.display = "block";
   }
 }
-
-function currentUser() {}
