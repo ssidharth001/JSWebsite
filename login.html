@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>RMedia</title>
     <link rel="stylesheet" href="css\style.css" />
-    <script src="js/common.js"></script>
   </head>
   <body>
     <header>
@@ -36,52 +35,28 @@
         <!-- Left section end -->
 
         <!-- Middle sec start -->
-        <div class="middle-sec">
-          <h2 id="contact-heading">Contact Form</h2>
-          <form id="add-post">
-            <label for="name">Name:</label><br />
-            <input type="text" id="name" name="name" /><br />
-            <p class="error" id="name-error"></p>
-            <label for="subject">Subject:</label><br />
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              maxlength="25"
-            /><br />
-            <label for="phonenumber">Phone Number:</label><br />
-            <label>+91-</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="1234567890"
-              pattern="[0-9]{10}"
-            /><br />
-            <label for="email">Email ID:</label><br />
-            <input type="email" id="email" name="email" /><br />
-            <label for="description">Description:</label><br />
-            <textarea
-              id="description"
-              name="description"
-              rows="7"
-              cols="30"
-              maxlength="265"
-              style="resize: none"
-            ></textarea
-            ><br />
-            <span>Remaining characters:</span
-            ><span id="characters-remaining">255</span><br />
-            <input id="submit" type="submit" value="Submit" />
-          </form>
+        <div>
+          <h2 class="login-header">Login</h2>
+          <div>
+            <form>
+              <label for="firstname">Name:</label><br />
+              <input type="text" id="first-name" name="firstname" /><br />
+              <label for="password">Password:</label><br />
+              <input type="password" id="password" name="password" /><br />
+              <span id="error-message"></span>
+              <a id="create-account" href="/register.html"
+                >Create a new account?</a
+              >
+              <button id="submit-button" type="button" onclick="login()">
+                Login
+              </button>
+            </form>
+          </div>
         </div>
         <!-- Middle section end -->
 
         <!-- Right sec start -->
-        <div class="right-sec">
-          <h3>Latest Posts</h3>
-          <ul id="latest-posts"></ul>
-        </div>
+
         <!--  Right sec end-->
       </div>
     </div>
@@ -113,7 +88,6 @@
         </div>
       </div>
     </footer>
-
-    <script type="text/javascript" src="js\contact_form.js"></script>
   </body>
+  <script type="text/javascript" src="js/login.js"></script>
 </html>
