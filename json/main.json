@@ -2,7 +2,7 @@
   "menu": [
     {
       "title": "Home",
-      "url": "index.html",
+      "url": "home.html",
       "not_found": false
     },
     {

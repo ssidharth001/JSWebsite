@@ -27,7 +27,7 @@ function login() {
         lastname: allUsers[i].lastname,
       };
       localStorage.setItem("currentuser", JSON.stringify(currentUser));
-      window.location.href = "/index.html";
+      window.location.href = "/home.html";
       return;
     }
   }

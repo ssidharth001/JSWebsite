@@ -1,3 +1,1 @@
-// import { loggedIn } from "./test";
-
-// console.log(loggedIn);
+window.location.replace("/login.html");
