@@ -1,0 +1,34 @@
+[
+  {
+    "jobTitle": "Senior DevOps Engineer",
+    "jobLocation": "Office",
+    "href": "#",
+    "jobCode": 1,
+    "lastDate": "",
+    "posAvailability": false
+  },
+  {
+    "jobTitle": "Senior React Developer",
+    "jobLocation": "Office",
+    "href": "#",
+    "jobCode": 2,
+    "lastDate": "2020-10-08",
+    "posAvailability": true
+  },
+  {
+    "jobTitle": "Senior Angular Developer",
+    "jobLocation": "Office",
+    "href": "#",
+    "jobCode": 3,
+    "lastDate": "2020-11-09",
+    "posAvailability": true
+  },
+  {
+    "jobTitle": "Senior JavaScript Developer",
+    "jobLocation": "Office",
+    "href": "#",
+    "jobCode": 4,
+    "lastDate": "2020-10-10",
+    "posAvailability": false
+  }
+]
