@@ -116,6 +116,10 @@ img.content-img {
   width: 80%;
 }
 
+#table-data {
+  color: #000000;
+}
+
 #add-post {
   margin: 10px 20px;
 }
@@ -159,6 +163,18 @@ form {
   padding: 5px;
   width: 50%;
   margin: 10px auto;
+}
+
+td button {
+  margin: 0px 40px;
+  padding: 0.3em 1.2em;
+  border-radius: 5px;
+  border-width: 0.5px;
+  color: #000000;
+  background-color: #60c2fa;
+}
+td button:hover {
+  background-color: #4095c6;
 }
 
 .middle-sec .table-data {

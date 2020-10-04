@@ -36,3 +36,5 @@ function clearErrormsg() {
     error.style.display = "block";
   }
 }
+
+function currentUser() {}

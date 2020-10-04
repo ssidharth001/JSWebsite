@@ -137,7 +137,7 @@ document.querySelector("#submit-button").addEventListener("click", function () {
       dob: dob,
       gender: gender,
     };
-    usersJson.push(user);
+    userJson = usersJson.push(user);
     var userDetails = JSON.stringify(usersJson);
     localStorage.setItem("users", userDetails);
 
