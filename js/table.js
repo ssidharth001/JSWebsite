@@ -10,8 +10,10 @@ xhttp.onreadystatechange = function () {
     var tableDatas = response.tableContents;
     buildTable(tableDatas);
 
-    document.querySelectorAll("th").forEach((item) => {
-      item.addEventListener("click", function () {
+    // <--------------------------TABLE SORTING--------------------------->
+
+    document.querySelectorAll("th").forEach((th) => {
+      th.addEventListener("click", function () {
         var column = this.dataset.column;
         var order = this.dataset.order;
         if (order == "descending") {
@@ -35,10 +37,6 @@ xhttp.onreadystatechange = function () {
 xhttp.open("GET", "json/tableData.json", true);
 xhttp.send();
 
-// <--------------------------TABLE SORTING--------------------------->
-
-function tableSort() {}
-
 // <--------------------------TABLE HEADERS--------------------------->
 
 function theaders(tableHeaders, tableKeys) {
@@ -59,9 +57,15 @@ function buildTable(tableDatas) {
                     <td>${i.jobCode}</td>
                     <td>${i.lastDate}</td>
                     <td>${
-                      i.posAvailability == true ? "<button>Apply</button>" : ""
+                      i.posAvailability == true
+                        ? "<button onClick=alertBtn()>Apply</button>"
+                        : ""
                     }</td>
                 </tr>`;
     tableData.innerHTML += row;
   }
+}
+
+function alertBtn() {
+  alert("Job Applied!!!");
 }
