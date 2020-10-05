@@ -26,21 +26,6 @@ xhttp.onreadystatechange = function () {
       }
     }
     document.getElementById("menu").innerHTML = menuList;
-
-    // //--------------------------------- POSTS ---------------------------------//
-    // var posts = response.posts;
-    // var postList = "";
-    // for (var i = 0; i < posts.length; i++) {
-    //   postList +=
-    //     "<li>" +
-    //     "<a>" +
-    //     "<img src=" +
-    //     posts[i] +
-    //     ' alt="" />' +
-    //     "</a>" +
-    //     "</li>";
-    // }
-    // document.getElementById("latest-posts").innerHTML = postList;
   }
 };
 xhttp.open("GET", "json/main.json", true);

@@ -7,7 +7,6 @@ function login() {
   clearErrormsg();
   for (i = 0; i < allUsers.length; i++) {
     if (name == allUsers[i].firstname && password == allUsers[i].password) {
-      console.log("logged in " + allUsers[i].firstname);
       var currentUser = {
         firstname: allUsers[i].firstname,
         lastname: allUsers[i].lastname,

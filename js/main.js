@@ -11,11 +11,10 @@ xhttp.open("GET", "json/main.json", true);
 xhttp.send();
 
 function theaders(response) {
-  var tableheader = response.tableheader;
-  console.log(tableheader);
-  var output3 = "";
-  for (var i = 0; i < tableheader.length; i++) {
-    output3 += "<th>" + tableheader[i].header + "</th>";
+  var tableHeader = response.tableHeader;
+  var tableHeaders = "";
+  for (var i = 0; i < tableHeader.length; i++) {
+    tableHeaders += "<th>" + tableHeader[i].header + "</th>";
   }
-  document.getElementById("table-head").innerHTML = output3;
+  document.getElementById("table-head").innerHTML = tableHeaders;
 }

@@ -1,39 +1,3 @@
-// function register() {
-//   let firstName = document.getElementById("first-name").value;
-//   let lastName = document.getElementById("last-name").value;
-
-//   var User = {
-//     firstName: firstName,
-//     lastName: lastName,
-//   };
-//   var existingstr = localStorage.getItem("User");
-//   var usersJson = [];
-
-//   var existingUsersJson = JSON.parse(existingstr);
-//   if (existingUsersJson) {
-//     usersJson = existingUsersJson;
-//   }
-//   userdetails = usersJson.push(User);
-
-//   localStorage.setItem("User", userdetails);
-// }
-
-// var usersJson = [];
-// document.querySelector("#submit-button").addEventListener("click", function () {
-//   function register() {
-//     let firstName = document.getElementById("first-name").value;
-//     let lastName = document.getElementById("last-name").value;
-//     var user = {
-//       firstName: firstName,
-//       lastName: lastName,
-//     };
-//     usersJson.push(user);
-//     var userDetails = JSON.stringify(usersJson);
-//     localStorage.setItem("users", userDetails);
-//   }
-//   register();
-// });
-
 var usersJson = [];
 document.querySelector("#submit-button").addEventListener("click", function () {
   let fname = document.getElementById("first-name").value;
