@@ -1,4 +1,4 @@
-//-----------------------------Remaining Characters-------------------------------//
+//-----------------------------REMAINING CHARACTERS-----------------------------//
 function countCharacters() {
   var textEntered, countRemaining, counter;
   textEntered = document.getElementById("description").value;
@@ -10,7 +10,8 @@ document
   .getElementById("description")
   .addEventListener("keyup", countCharacters, false);
 
-//---------------------------------On Submit------------------------------------//
+//---------------------------------ON SUMBIT------------------------------------//
+
 document.getElementById("add-post").addEventListener("submit", addPost);
 function addPost(e) {
   e.preventDefault();

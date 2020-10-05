@@ -3,19 +3,19 @@ xhttp.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
     var response = JSON.parse(this.responseText);
 
-    //----------------------------------for menu----------------------------
+    //--------------------------------- MENU ---------------------------//
     var menu = response.menu;
-    var output1 = "";
+    var menuList = "";
     for (var i = 0; i < menu.length; i++) {
       if (menu[i].not_found == true) {
-        output1 +=
+        menuList +=
           "<li>" +
           '<a href="error_404.html">' +
           menu[i].title +
           "</a>" +
           "</li>";
       } else {
-        output1 +=
+        menuList +=
           "<li>" +
           "<a href=" +
           menu[i].url +
@@ -25,22 +25,7 @@ xhttp.onreadystatechange = function () {
           "</li>";
       }
     }
-    document.getElementById("menu").innerHTML = output1;
-
-    //----------------------------------for posts---------------------------------
-    var posts = response.posts;
-    var output2 = "";
-    for (var i = 0; i < posts.length; i++) {
-      output2 +=
-        "<li>" +
-        "<a>" +
-        "<img src=" +
-        posts[i] +
-        ' alt="" />' +
-        "</a>" +
-        "</li>";
-    }
-    document.getElementById("latest-posts").innerHTML = output2;
+    document.getElementById("menu").innerHTML = menuList;
   }
 };
 xhttp.open("GET", "json/main.json", true);

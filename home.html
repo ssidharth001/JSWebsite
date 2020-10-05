@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>RMedia</title>
     <link rel="stylesheet" href="css\style.css" />
-    <script type="text/javascript" src="js\main.js"></script>
+    <script type="text/javascript" src="js/table.js"></script>
 
     <script src="js/common.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/posts.js"></script>
   </head>
   <body>
     <header>
@@ -26,7 +27,7 @@
           />
           <div class="header-bottom">
             <span id="name-display"></span><span></span
-            ><button id="logout-button">Logout</button>
+            ><span id="logout"></span>
           </div>
         </div>
       </div>
@@ -44,71 +45,17 @@
         <!-- Middle sec start -->
         <div class="middle-sec">
           <div class="left-content">
-            <h2 id="page-heading"></h2>
-            <p id="test-text">this is a test text</p>
+            <h2 id="page-heading" class="pg-heading"></h2>
             <p id="first-para"></p>
             <p id="read-more"></p>
           </div>
           <div class="right-content" id="right-content"></div>
           <div class="table-data">
             <table cellpadding="2px" cellspacing="2px">
-              <tr class="table-head" id="table-head"></tr>
-              <tr>
-                <td>Lorem</td>
-                <td>Lorem</td>
-                <td>Lorem</td>
-                <td class="apply-btn">
-                  <input type="button" value="Apply Now" />
-                </td>
-              </tr>
-              <tr>
-                <td>Lorem</td>
-                <td>Lorem</td>
-                <td>Lorem</td>
-                <td class="apply-btn">
-                  <input type="button" value="Apply Now" />
-                </td>
-              </tr>
-              <tr>
-                <td>Lorem</td>
-                <td>Lorem</td>
-                <td>Lorem</td>
-                <td class="apply-btn">
-                  <input type="button" value="Apply Now" />
-                </td>
-              </tr>
-              <tr>
-                <td>Lorem</td>
-                <td>Lorem</td>
-                <td>Lorem</td>
-                <td class="apply-btn">
-                  <input type="button" value="Apply Now" />
-                </td>
-              </tr>
-              <tr>
-                <td>Lorem</td>
-                <td>Lorem</td>
-                <td>Lorem</td>
-                <td class="apply-btn">
-                  <input type="button" value="Apply Now" />
-                </td>
-              </tr>
-              <tr>
-                <td>Lorem</td>
-                <td>Lorem</td>
-                <td>Lorem</td>
-                <td class="apply-btn">
-                  <input type="button" value="Apply Now" />
-                </td>
-              </tr>
-              <tr>
-                <td>Lorem</td>
-                <td>Lorem</td>
-                <td>Lorem</td>
-                <td class="apply-btn">
-                  <input type="button" value="Apply Now" />
-                </td>
-              </tr>
+              <thead>
+                <tr class="table-head" id="table-head"></tr>
+              </thead>
+              <tbody id="table-data"></tbody>
             </table>
           </div>
         </div>
@@ -123,7 +70,7 @@
       </div>
     </div>
     <footer>
-      <div class="container">
+      <div class="container footer-txt">
         <div class="footer-item">
           <p>
             lorem lpsum is simply dummy text of the printing and typesetting
@@ -152,5 +99,5 @@
     </footer>
   </body>
   <script type="text/javascript" src="js/logout.js"></script>
-  <script src="js/search.js"></script>
+  <script type="text/javascript" src="js/search.js"></script>
 </html>
