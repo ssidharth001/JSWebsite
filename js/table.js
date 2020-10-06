@@ -34,6 +34,7 @@ xhttp.onreadystatechange = function () {
     });
   }
 };
+
 xhttp.open("GET", "json/tableData.json", true);
 xhttp.send();
 
