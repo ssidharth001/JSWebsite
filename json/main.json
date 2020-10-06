@@ -1,0 +1,33 @@
+{
+  "menu": [
+    {
+      "title": "Home",
+      "url": "home.html",
+      "not_found": false
+    },
+    {
+      "title": "About",
+      "url": "about.html",
+      "not_found": true
+    },
+    {
+      "title": "Services",
+      "url": "services.html",
+      "not_found": false
+    },
+    {
+      "title": "Contact",
+      "url": "contact.html",
+      "not_found": false
+    }
+  ],
+
+  "titles": ["Home", "About", "Services", "Contact"],
+
+  "posts": ["images/post-image.jpg", "images/post-image.jpg"],
+  "homeImage": "images/main-image.jpg",
+
+  "text": "Lorem lpsum is simply dummy text of the printing and typesetting industry. Lorem lpsum has been the industry's standard dummy text ever since the 1500's,when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting,remaining 1960s with the release ofLetraset sheets containing lorem lpsum passages,and more recently with desktop publishing software like Aldus Pagemker including versions of lorem lpsum.",
+
+  "more": "lorem lpsum is simply dummy text of the printing and typesetting industry."
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RMedia</title>
+    <link rel="stylesheet" href="css\style.css" />
+    <script type="text/javascript" src="js/table.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/posts.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">
+          <a href="/"><img src="images/logo.jpg" alt="RMedia" /></a>
+        </h1>
+        <div class="search-wrap">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search..."
+          />
+          <div class="header-bottom">
+            <span id="name-display"></span><span></span
+            ><span id="logout"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="content">
+        <!-- Left section Start -->
+        <div class="left-sec">
+          <nav>
+            <ul id="menu"></ul>
+          </nav>
+        </div>
+        <!-- Left section end -->
+
+        <!-- Middle sec start -->
+        <div class="middle-sec">
+          <div class="left-content">
+            <h2 id="page-heading" class="pg-heading"></h2>
+            <p id="first-para"></p>
+            <p id="read-more"></p>
+          </div>
+          <div class="right-content" id="right-content"></div>
+          <div class="table-data">
+            <table cellpadding="2px" cellspacing="2px">
+              <thead>
+                <tr class="table-head" id="table-head"></tr>
+              </thead>
+              <tbody id="table-data"></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Middle section end -->
+
+        <!-- Right sec start -->
+        <div class="right-sec">
+          <h3>Latest Posts</h3>
+          <ul id="latest-posts"></ul>
+        </div>
+        <!--  Right sec end-->
+      </div>
+    </div>
+    <footer>
+      <div class="container footer-txt">
+        <div class="footer-item">
+          <p>
+            lorem lpsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="footer-item">
+          <p>
+            lorem lpsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="footer-item">
+          <p>
+            lorem lpsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="footer-item">
+          <p>
+            lorem lpsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="js/logout.js"></script>
+  <script type="text/javascript" src="js/search.js"></script>
+</html>
